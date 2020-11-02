@@ -1,3 +1,49 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+.hero{
+  height: 100vh;
+}
+
+header{
+  width:1200px;
+  height: 100px;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  header nav ul,li{
+  list-style:none;
+  a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  }
+}
+.container{
+  width:1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  .hero_content{
+    width:830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
 .fullscreen {
   position: relative;
   .background {
