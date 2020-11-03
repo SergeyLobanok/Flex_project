@@ -1,48 +1,48 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-html,body{
-  margin:0;
-  padding:0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.hero{
+.hero {
   height: 100vh;
+  background: yellow;
 }
 
-header{
-  width:1200px;
+header {
   height: 100px;
 }
 
-header nav{
+.container {
+  width: 1200px;
+}
+header .container ul,
+li {
   display: flex;
-  flex-direction: row;
-  header nav ul,li{
-  list-style:none;
-  a{
+  display: row;
+  padding-left: 20px;
+  justify-content: flex-end;
+  a {
     text-decoration: none;
     color: black;
-    
-  }
   }
 }
-.container{
-  width:1200px;
+
+.container {
   padding-left: 40px;
   padding-right: 40px;
-  .hero_content{
-    width:830px;
+  margin: 0 auto;
+  &.hero_content {
+    width: 830px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 }
-
-
-
 
 .fullscreen {
   position: relative;
