@@ -32,15 +32,16 @@ header nav{
   width:1200px;
   padding-left: 40px;
   padding-right: 40px;
-  .hero_content{
-    width:830px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  margin: 0 auto;
 }
 
+.hero_content{
+
+display: flex;
+flex-direction: column;
+justify-self: center;
+align-items: center;
+}
 
 
 
