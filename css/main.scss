@@ -24,7 +24,7 @@ header {
 .container {
   width: 1200px;
   margin: 0 auto;
-  &.hero_content {
+  &.hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@ header {
       background: #4985ff;
       box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
       border-radius: 30px;
-      color: #ffffff;
+      color: #ffffff;  
     }
   }
 }
@@ -71,6 +71,7 @@ header .container ul {
   a {
     text-decoration: none;
     color: #ffffff;
+    opacity: 1;
   }
 }
 
@@ -82,5 +83,49 @@ header .container ul {
     height: 50%;
     background: blue;
     z-index: 0;
+  }
+}
+
+h2 {
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 110px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+}
+
+p{
+  padding-top: 50px;
+  max-width: 730px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #999999 
+}
+
+.servises__items{
+  padding-top: 80px;
+  .servises__item{
+    display: flex;
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  .servises__item-list{
+      padding-left: 50px;
+      padding-right: 40px;
+      h3,p{
+        text-align: left;
+        padding: 0;
+      }
+    }
   }
 }
