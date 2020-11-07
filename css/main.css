@@ -165,9 +165,48 @@ p {
 
 .servises button {
   margin-top: 70px;
+  margin-bottom: 70px;
   position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.standarts {
+  background: #F6F6F8;
+}
+
+.container.standarts {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container.standarts .standarts__content {
+  text-align: left;
+}
+
+.container.standarts .standarts__content h2 {
+  text-align: left;
+  width: 425px;
+  margin: 0;
+}
+
+.container.standarts .standarts__content p {
+  text-align: left;
+  width: 490px;
+}
+
+.container.standarts .standarts__content a {
+  color: blue;
+}
+
+.container.standarts .standarts__content img {
+  width: 500px;
+  height: 400px;
 }
 /*# sourceMappingURL=main.css.map */

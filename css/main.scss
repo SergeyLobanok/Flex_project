@@ -132,7 +132,38 @@ p{
 }
 .servises button{
   margin-top: 70px;
+  margin-bottom:70px;
   position: relative;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
+  
+}
+
+.standarts{
+  background: #F6F6F8;
+}
+
+.container.standarts{
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  .standarts__content{
+    text-align: left;
+    h2{
+      text-align: left;
+      width: 425px;
+      margin: 0;
+    }
+    p{
+      text-align: left;
+      width: 490px;
+    }
+    a{
+      color: blue;
+    }
+    img{
+      width:500px;
+      height:400px;
+    }
+  }
 }
