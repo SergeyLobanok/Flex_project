@@ -75,8 +75,6 @@ button {
   width: 200px;
   height: 45px;
   background: #4985ff;
-  -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-          box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   color: #ffffff;
 }
@@ -221,21 +219,27 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .standarts__projects .standarts__project {
-  margin: 0;
   padding: 0;
+}
+
+.standarts__projects button {
+  text-align: center;
 }
 
 .fullscreen {
   position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20.44%, #504DC2), color-stop(80.91%, #5F12D0)), #C4C4C4;
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
 }
 
 .fullscreen .container .background {
   position: absolute;
   width: 100%;
-  background: blue;
+  background: white;
 }
 
 .fullscreen .background__hight {
@@ -246,9 +250,126 @@ p {
 
 .fullscreen h2 {
   text-align: left;
+  color: white;
 }
 
 .fullscreen button {
-  padding-top: 200px;
+  margin-top: 150px;
+}
+
+.projects-image {
+  padding-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-image img {
+  padding-right: 30px;
+}
+
+hr {
+  width: 1200px;
+  margin-top: 100px;
+}
+
+.jobs {
+  background: url("../images/jobs.png");
+  height: 570px;
+}
+
+.jobs .job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jobs .job h2 {
+  color: white;
+  text-align: center;
+}
+
+.jobs .job p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.jobs .job .job-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 970px;
+  position: absolute;
+  margin-top: 300px;
+}
+
+.jobs .job .job-video .player {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 1px solid white;
+  border-radius: 200px;
+}
+
+.jobs .job .job-video .player img {
+  width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.jobs .job .job-video .player p {
+  line-height: 100px;
+  padding: 0;
+}
+
+.subsribers {
+  margin-top: 300px;
+}
+
+.subsribers .subsribe h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.subsribers .subsribe .subsribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subsribers .subsribe .subsribe-form input {
+  height: 43px;
+}
+
+.subsribers .subsribe .subsribe-form button {
+  border-radius: 0 30px 30px 0;
 }
 /*# sourceMappingURL=main.css.map */
