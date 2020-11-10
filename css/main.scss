@@ -10,17 +10,16 @@ body {
 
 .hero {
   height: 100vh;
-  background: url("../images/background.png");
+  background: url("../images/background.png") no-repeat;
 }
 
 header {
   position: absolute;
   width: 100%;
   height: 100px;
-  line-height: 100px;
   display: flex;
-  justify-content: flex-end; 
-  border-bottom: 1px solid #999999 ;
+  justify-content: flex-end;
+  border-bottom: 1px solid #999999;
 }
 
 .container {
@@ -37,7 +36,7 @@ header {
     h1 {
       font-family: "Montserrat";
       font-style: normal;
-      width:840px;
+      width: 840px;
       font-weight: 800;
       font-size: 48px;
       line-height: 64px;
@@ -61,26 +60,29 @@ button {
   height: 45px;
   background: #4985ff;
   border-radius: 30px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
-header .container ul{
+header .container ul {
   display: flex;
   justify-content: flex-end;
+  padding-top: -20px;
   li {
     padding-left: 20px;
     list-style: none;
+    padding: 0;
   }
-  li:hover{
+  li:hover {
     border-bottom: 2px solid white;
   }
   a {
     text-decoration: none;
     color: #ffffff;
     opacity: 1;
+    line-height: 100px;
+    padding: 0;
   }
 }
-
 
 h2 {
   max-width: 750px;
@@ -94,7 +96,7 @@ h2 {
   text-align: center;
 }
 
-p{
+p {
   padding-top: 50px;
   max-width: 730px;
   margin: 0 auto;
@@ -104,237 +106,237 @@ p{
   font-size: 16px;
   line-height: 25px;
   text-align: center;
-  color: #999999 
+  color: #999999;
 }
 
-.servises__items{
+.servises__items {
   padding-top: 80px;
-  .servises__item{
+  .servises__item {
     display: flex;
-    img{
+    img {
       width: 40px;
       height: 40px;
     }
-  .servises__item-list{
+    .servises__item-list {
       padding-left: 50px;
       padding-right: 40px;
-      h3,p{
+      h3,
+      p {
         text-align: left;
         padding: 0;
       }
     }
   }
 }
-.servises button{
+.servises button {
   margin-top: 70px;
-  margin-bottom:70px;
+  margin-bottom: 70px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
-.standarts{
-  background: #F6F6F8;
-  p{
+.standarts {
+  background: #f6f6f8;
+  p {
     padding: 0;
   }
 }
 
-.container.standarts{
+.container.standarts {
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #F6F6F8;
-  .standarts__content{
+  border-bottom: 1px solid #f6f6f8;
+  .standarts__content {
     text-align: left;
     line-height: 100%;
-    h2{
+    h2 {
       text-align: left;
       width: 425px;
       margin: 0;
       padding: 0;
       padding-bottom: 40px;
     }
-    p{
+    p {
       text-align: left;
       width: 490px;
       padding-bottom: 30px;
     }
-    a{
+    a {
       padding-top: 30px;
       color: blue;
     }
-    img{
-      width:500px;
+    img {
+      width: 500px;
     }
   }
 }
 
-.standarts__projects{
+.standarts__projects {
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  .project-hight {
     display: flex;
-    width: 70px;
+    padding: 0;
+  }
+  .standarts__project p {
+    padding: 0;
+  }
+  button {
+    text-align: center;
+  }
+}
+
+.fullscreen {
+  position: relative;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+  .container .background {
+    position: absolute;
+    width: 100%;
+    background: white;
+  }
+  .background__hight {
+    display: flex;
+  }
+  h2 {
+    text-align: left;
+    color: white;
+  }
+  button {
+    margin-top: 150px;
+  }
+}
+
+.projects-image {
+  padding-top: 70px;
+  justify-content: center;
+  img {
+    padding-right: 30px;
+  }
+}
+
+.projects button {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+hr {
+  width: 1200px;
+  margin-top: 100px;
+}
+
+.jobs {
+  background: url("../images/jobs.png") no-repeat;
+  height: 735px;
+  .job {
+    display: flex;
     justify-content: center;
-    align-items: center;    
-    .project-hight{
-      display: flex;
-      padding: 0;
-    }
-    .standarts__project p{
-      padding: 0;
-    }
-    button{
+
+    h2 {
+      color: white;
       text-align: center;
     }
-  }
-
-  .fullscreen {
-    position: relative;
-    background:linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-    .container .background {
-      position: absolute;
-      width: 100%;
-      background: white;
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: white;
     }
-    .background__hight{
+    .job-video {
       display: flex;
-    }
-    h2{
-      text-align: left;
-      color:white;
-    }
-    button{
-      margin-top:150px;
-    }
-  }
-  
-  .projects-image{
-    padding-top:70px ;
-    justify-content: center;
-    img{
-      padding-right:30px;
-    }
-  }
-
-  .projects button{
-    margin-top: 70px;
-    margin-bottom:70px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  hr{
-    width: 1200px;
-    margin-top:100px;
-  }
-
-.jobs{
-  background:url("../images/jobs.png") no-repeat;
-    height: 735px;
-    .job{
-        display: flex;
-        justify-content: center;
-      
-      h2{
-        color: white;
-        text-align: center;
-      }
-      p{
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-        color:white;
-      }
-     .job-video{
-       display: flex;
-       justify-content: center;
-       width: 970px;
-       height: 430px;
-       position: absolute;
-       margin-top:250px;
-      .player{
+      justify-content: center;
+      width: 970px;
+      height: 430px;
+      position: absolute;
+      margin-top: 250px;
+      .player {
         padding: 0;
         margin: 0;
-        display:flex;
+        display: flex;
         width: 300px;
-        height:100px;
+        height: 100px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         border: 1px solid white;
         border-radius: 200px;
-        img{
+        img {
           width: 60px;
           object-fit: contain;
-          padding-left:30px;
+          padding-left: 30px;
           text-align: center;
         }
-        p{
+        p {
           line-height: 100px;
-          padding:0;
-        } 
-      } 
+          padding: 0;
+        }
+      }
     }
   }
 }
-.subsribers{
-  margin-top:300px;
-  p{
-    padding:0;
-    padding-top:30px;
+.subsribers {
+  margin-top: 300px;
+  p {
+    padding: 0;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
-  .subsribe{
-   h3{
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-   }
-   .subsribe-form{
-     display: flex;
-     justify-content: center;
-    input{
-      height: 43px;
+  .subsribe {
+    h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
     }
-    button{
-      border-radius: 0 30px 30px 0;
+    .subsribe-form {
+      display: flex;
+      justify-content: center;
+      input {
+        height: 43px;
+      }
+      button {
+        border-radius: 0 30px 30px 0;
+      }
     }
-   }
   }
 }
-footer{
-  background: #F6F6F8;
-  p{
-    padding-bottom:30px ;
+footer {
+  background: #f6f6f8;
+  p {
+    padding-bottom: 30px;
   }
-    .container.footer{
-      display: flex;
-      justify-content: space-between;
-      .footer-inforation{
-      padding-top:70px;
-      h3{
+  .container.footer {
+    display: flex;
+    justify-content: space-between;
+    .footer-inforation {
+      padding-top: 70px;
+      h3 {
         width: 245px;
       }
-      .information-list{
+      .information-list {
         display: flex;
         width: 230px;
-        padding-top:30px;
-        img{
-          width:16px;
+        padding-top: 30px;
+        img {
+          width: 16px;
           height: 16px;
         }
-        .ok{
-          width:7px;
+        .ok {
+          width: 7px;
           height: 7px;
         }
-        a{
+        a {
           text-decoration: none;
           font-family: "Montserrat";
           font-style: normal;
@@ -343,7 +345,7 @@ footer{
           line-height: 16px;
           color: #999999;
           text-align: left;
-          padding-left:17px;
+          padding-left: 17px;
         }
       }
     }
